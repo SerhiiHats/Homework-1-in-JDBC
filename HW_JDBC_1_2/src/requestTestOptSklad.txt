@@ -1,0 +1,18 @@
+INSERT INTO customer (last_name_cust, first_name_cust, phone_cust, email_cust, created_cust) VALUES ('Капущу', 'Дмитро', '+38(067)8787214', 'veter1817@gmail.com', curdate());
+INSERT INTO customer (last_name_cust, first_name_cust, phone_cust, email_cust, created_cust) VALUES ('Назаров', 'Вадим', '+38(068)9785411', 'yuristolgamileticho@ukr.net', curdate());
+INSERT INTO customer (last_name_cust, first_name_cust, phone_cust, email_cust, created_cust) VALUES ('Крамаренко', 'Златослава', '+38(073)7772147', 'krafinright@ukr.net', curdate());
+INSERT INTO customer (last_name_cust, first_name_cust, phone_cust, email_cust, created_cust) VALUES ('Степаненко', 'Олександр', '+38(067)5054278', 'incon17step@incon.com.ua', curdate());
+INSERT INTO customer (last_name_cust, first_name_cust, phone_cust, email_cust, created_cust) VALUES ('Бурлаку', 'Іван', '+38(067)6568741', 'ivan.b.vich@gmail.com', curdate());
+INSERT INTO customer (last_name_cust, first_name_cust, phone_cust, email_cust, created_cust) VALUES ('Ізотова', 'Оксана', '+38(068)4204217','regioki@ukr.net', curdate());
+INSERT INTO customer (last_name_cust, first_name_cust, phone_cust, email_cust, created_cust) VALUES ('Хмельниченко', 'Олег', '+38(067)7273051', 'hmilnenko_ol@ukr.net', curdate());
+SELECT * FROM customer;
+SELECT * FROM customer WHERE id_cust = 5;
+SELECT * FROM customer WHERE last_name_cust = 'Ізотова';
+SELECT * FROM customer WHERE first_name_cust = 'Вадим';
+SELECT * FROM customer WHERE phone_cust = '+38(067)8787214';
+SELECT * FROM customer WHERE email_cust = 'yuristolgamileticho@ukr.net';
+UPDATE customer SET phone_cust = '+38(067)7777777', email_cust = 'vanya_ukrainian@ukr.net'  WHERE id_cust = 5;
+UPDATE customer SET last_name_cust = 'Борщ' WHERE id_cust = 6;
+DELETE FROM customer WHERE id_cust = 2;
+DELETE FROM customer WHERE id_cust = 4;
+SELECT * FROM customer;
